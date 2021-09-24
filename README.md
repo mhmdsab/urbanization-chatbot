@@ -37,11 +37,13 @@ To set up the chatbot follow the steps below:
 
 3- run "pip install -r requirements.txt"
 
-4- run "python -m spacy download en_core_web_md"
+4- run "pip install "rasa-x==0.40.0 --extra-index-url https://pypi.rasa.com/simple"
 
-5- run rasa x
+5- run "python -m spacy download en_core_web_md"
 
-6- in another terminal run rasa run actions
+6- run rasa x
+
+7- in another terminal run rasa run actions
 
 
 
