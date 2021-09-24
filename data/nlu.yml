@@ -1,0 +1,84 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - how are you dude
+    - how do you do
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - see you soon
+    - see u soon
+
+- intent: check_capital
+  examples: |
+    - Can you identify capitals
+    - are you able to retrieve capitals of different countries
+    - I want you to get me the capital of a country
+    - capitals please
+    - please find the capital of [india]{"entity":"country","value":"India"}
+    - can you identify the capital of [Russia](country)
+    - what is the capital of the [united states of america]{"entity":"country","value":"USA"}
+    - do you know the capital of [finland]{"entity":"country","value":"Finland"}
+    - my friend lives in [Japan](country), what is its capital?
+    - what about  [japan]{"entity":"country","value":"Japan"}, what is its capital?
+
+- intent: check_population
+  examples: |
+    - what is the whole number of people or inhabitants in a country or region
+    - can you tell me the total of individuals occupying an area or making up a whole
+    - how many people live in [Australia](country)
+    - can you check the populations in [australia]{"entity":"country","value":"Australia"}
+    - I live in [Greece](country), how many people are there
+    - how does the population look like in [USA](country)
+    - I want to you to give me an estimate about population
+    - can you tell me the numper of persons living in [India](country)
+    - is it over populated in [russia]{"entity":"country","value":"Russia"}
+    - how many people live in [usa]{"entity":"country","value":"USA"}
+
+- intent: nlu_fallback
+  examples: |
+    - sports
+    - food
+    - survival
+    - watch a movie
+    - out of scope
+    - fall back
+    - get the hunt
+    - sppon
+    - overwhelmed
+    - la casa de papel
+    - when did you arrive yesterday
+    - kjaa ; asdfkhadf hdakhf
+    - eeiow wloc ppower powencax badf
+    - [USA](country)
+    - [India](country)
+    - [australia]{"entity":"country","value":"Australia"}
+    - [india]{"entity":"country","value":"India"}
+    - [japan]{"entity":"country","value":"Japan"}
+

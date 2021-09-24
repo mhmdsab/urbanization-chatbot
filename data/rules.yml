@@ -1,0 +1,51 @@
+version: "2.0"
+
+rules:
+
+- rule: Say hi
+  steps:
+  - intent: greet
+  - action: action_greet
+
+- rule: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: action_goodbye
+
+- rule: activate check capital form
+  steps:
+  - intent: check_capital
+  - action: check_capital_form
+  - active_loop: check_capital_form
+
+- rule: submit check capital form
+  condition:
+  - active_loop: check_capital_form
+  steps:
+  - action: check_capital_form
+  - active_loop: null
+  - action: action_submit_check_capital_form
+
+
+- rule: activate check population form
+  steps:
+  - intent: check_population
+  - action: check_population_form
+  - active_loop: check_population_form
+
+- rule: submit check population form
+  condition:
+  - active_loop: check_population_form
+  steps:
+  - action: check_population_form
+  - active_loop: null
+  - action: action_submit_check_population_form
+
+- rule: Say fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_default_fallback
+
+
+
+

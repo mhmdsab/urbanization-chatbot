@@ -1,0 +1,33 @@
+version: "2.0"
+nlu:
+- synonym: USA
+  examples: |
+    - united states
+    - states
+    - united states of america
+    - usa
+- synonym: Greece
+  examples: |
+    - greece
+- synonym: Finland
+  examples: |
+    - finland
+- synonym: Japan
+  examples: |
+    - japan
+- synonym: Russia
+  examples: |
+    - russia
+- synonym: India
+  examples: |
+    - india
+- lookup: country
+  examples: |
+    - Australia
+    - USA
+    - Greece
+    - Sweden
+    - Finland
+    - Japan
+    - Russia
+    - India
